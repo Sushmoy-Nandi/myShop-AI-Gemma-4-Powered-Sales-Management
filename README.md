@@ -1,6 +1,8 @@
 # myShop AI
 > **Sales Management Powered by Google AI (Gemma 4)**
 
+![myShop AI Dashboard](Screenshots/Dashboard.png)
+
 ## 1. Problem Statement
 Small and medium business owners in emerging markets often rely on scattered spreadsheets or pen-and-paper to manage daily sales. This manual process makes it difficult to track profitability, identify at-risk customers, or gain actionable business insights without hiring technical experts. 
 
@@ -19,6 +21,23 @@ Without proper analytics, businesses lose money due to hidden inefficiencies. Th
 - **Dynamic Pricing AI**: Intelligent pricing recommendations powered by Gemma 4, analyzing sales velocity and stock buffers to maximize margin and clear dead stock.
 - **AI Restock Planner**: A hybrid approach using deterministic Python math to calculate exact purchase quantities and stockout dates, combined with Gemma 4 to generate a strategic, bilingual executive summary of the weekly purchase plan.
 - **Google Sheets Sync**: (Optional) Connect a Google Sheet to push or pull orders directly to the web app, plus many more hidden features to streamline your business!
+
+### 🌟 Feature Gallery
+
+**Secure Authentication & Onboarding**
+![Login Page](Screenshots/Login%20Page.png)
+
+**AI Business Insights & Daily Reports**
+![AI Insights](Screenshots/AI%20%20Insights.png)
+
+**Dynamic Pricing AI**
+![Pricing AI](Screenshots/Dynamic%20Priceing%20AI.png)
+
+**AI Restock Planner**
+![Restock AI](Screenshots/Restock%20AI.png)
+
+**Comprehensive Financials**
+![Monthly Report](Screenshots/Monthly%20Report.png)
 
 ## 4. Gemma 4 Integration
 This project uses the official Google AI APIs (via the `google-genai` SDK) to communicate exclusively with **Gemma 4**. 
