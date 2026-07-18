@@ -39,6 +39,11 @@ Without proper analytics, businesses lose money due to hidden inefficiencies. Th
 **Comprehensive Financials**
 ![Monthly Report](Screenshots/Monthly%20Report.png)
 
+**Automated AI Daily Email Reports**
+![Email Report 1](Screenshots/Email%201.png)
+
+![Email Report 2](Screenshots/Email%202.png)
+
 ## 4. Gemma 4 Integration
 This project uses the official Google AI APIs (via the `google-genai` SDK) to communicate exclusively with **Gemma 4**. 
 
