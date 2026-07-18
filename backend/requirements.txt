@@ -1,0 +1,30 @@
+# Web framework
+fastapi
+uvicorn[standard]
+
+# Data processing
+pandas
+openpyxl
+xlrd
+
+# Auth
+python-jose[cryptography]
+bcrypt
+python-multipart
+
+# Database
+SQLAlchemy
+psycopg[binary]
+
+# HTTP / AI
+requests
+python-dotenv
+google-genai
+pydantic
+
+# Scheduling & email
+apscheduler
+
+# Google Sheets integration (optional — comment out if not needed)
+gspread
+google-auth
