@@ -15,6 +15,7 @@ import {
   ShoppingCart
 } from 'lucide-react';
 import Sidebar from '../components/Sidebar';
+import FormattedText from '../components/FormattedText';
 import api from '../services/api';
 
 // ─── Helpers ───────────────────────────────────────────────────────────────────
