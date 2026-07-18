@@ -151,7 +151,7 @@ Open a terminal in the main project folder and run:
 ```powershell
 cd backend
 python -m venv venv
-pip install -r requirements.txt
+venv\Scripts\pip.exe install -r requirements.txt
 venv\Scripts\uvicorn.exe main:app --reload --port 8000
 ```
 
