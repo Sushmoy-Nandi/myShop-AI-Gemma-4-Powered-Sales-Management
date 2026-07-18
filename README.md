@@ -146,7 +146,14 @@ To set up free email sending via Google Apps Script:
 
 ### 3. Installation Instructions
 
-**Step A: Backend Setup**
+**Step A: Clone the Repository**
+First, download the code and navigate into the newly created project folder:
+```powershell
+git clone https://github.com/Sushmoy-Nandi/myShop-AI-Gemma-4-Powered-Sales-Management.git
+cd myShop-AI-Gemma-4-Powered-Sales-Management
+```
+
+**Step B: Backend Setup**
 Open a terminal in the main project folder and run:
 ```powershell
 cd backend
@@ -155,7 +162,7 @@ venv\Scripts\pip.exe install -r requirements.txt
 venv\Scripts\uvicorn.exe main:app --reload --port 8000
 ```
 
-**Step B: Frontend Setup**
+**Step C: Frontend Setup**
 Open a new terminal in the main project folder and run:
 ```powershell
 cd frontend
