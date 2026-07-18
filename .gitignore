@@ -57,3 +57,7 @@ logs/
 
 # Agent Customizations
 .agents/
+
+# Untracked files
+Untracked/*
+
