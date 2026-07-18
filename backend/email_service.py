@@ -102,62 +102,68 @@ def build_report_html(
     aov: float,
     ai_insights: str,
 ) -> str:
-    return f"""<div style="font-family:Arial,sans-serif;font-size:14px;color:#202124;">
+    return f"""
+    <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f4f7f6; padding: 40px 20px; color: #333;">
+        <div style="max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+            
+            <!-- Header -->
+            <div style="background: linear-gradient(135deg, #0891b2, #8b5cf6); padding: 30px 20px; text-align: center; color: white;">
+                <h1 style="margin: 0; font-size: 28px; font-weight: bold; letter-spacing: 1px;">{business_name}</h1>
+                <p style="margin: 5px 0 0 0; font-size: 16px; opacity: 0.9;">Daily Performance Report</p>
+                <div style="margin-top: 15px; display: inline-block; background: rgba(255,255,255,0.2); padding: 6px 15px; border-radius: 20px; font-weight: 600; font-size: 14px;">
+                    {date_str}
+                </div>
+            </div>
 
-<p>Hello,</p>
+            <!-- Content -->
+            <div style="padding: 30px;">
+                <h2 style="font-size: 18px; color: #1f2937; margin-bottom: 20px; border-bottom: 2px solid #f3f4f6; padding-bottom: 10px;">Metrics Overview</h2>
+                
+                <table width="100%" cellpadding="12" cellspacing="0" style="border-collapse: collapse; margin-bottom: 30px;">
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #e5e7eb;">
+                            <td style="color: #6b7280; font-weight: 500;">Total Orders</td>
+                            <td align="right" style="font-weight: 600; color: #111827;">{total_orders}</td>
+                        </tr>
+                        <tr style="background-color: #f9fafb; border-bottom: 1px solid #e5e7eb;">
+                            <td style="color: #6b7280; font-weight: 500;">Unique Customers</td>
+                            <td align="right" style="font-weight: 600; color: #111827;">{unique_customers}</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e5e7eb;">
+                            <td style="color: #6b7280; font-weight: 500;">Gross Revenue</td>
+                            <td align="right" style="font-weight: 600; color: #111827;">৳{total_revenue:,.0f}</td>
+                        </tr>
+                        <tr style="background-color: #f9fafb; border-bottom: 1px solid #e5e7eb;">
+                            <td style="color: #6b7280; font-weight: 500;">Delivery Costs</td>
+                            <td align="right" style="font-weight: 600; color: #ef4444;">-৳{total_delivery:,.0f}</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #e5e7eb;">
+                            <td style="color: #6b7280; font-weight: 500;">Avg. Order Value</td>
+                            <td align="right" style="font-weight: 600; color: #111827;">৳{aov:,.2f}</td>
+                        </tr>
+                        <tr>
+                            <td style="color: #111827; font-weight: 700; font-size: 16px; padding-top: 20px;">Net Profit</td>
+                            <td align="right" style="font-weight: 800; font-size: 18px; color: #10b981; padding-top: 20px;">৳{total_profit:,.0f}</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-<p>Here is your daily sales report for <b>{date_str}</b>.</p>
+                <h2 style="font-size: 18px; color: #1f2937; margin-bottom: 15px; display: flex; align-items: center;">
+                    <span style="background: #e0e7ff; color: #4f46e5; padding: 4px 8px; border-radius: 6px; font-size: 12px; margin-right: 10px; font-weight: bold;">AI</span>
+                    Gemma 4 Insights
+                </h2>
+                <div style="background-color: #f8fafc; border-left: 4px solid #8b5cf6; padding: 20px; border-radius: 4px; color: #334155; line-height: 1.6; font-size: 14.5px; white-space: pre-wrap;">{ai_insights}</div>
+                
+            </div>
 
-<table border="1" cellpadding="8" cellspacing="0"
-style="border-collapse:collapse;">
-
-<tr style="background:#f5f5f5;">
-<th align="left">Metric</th>
-<th align="left">Value</th>
-</tr>
-
-<tr>
-<td>Total Orders</td>
-<td>{total_orders}</td>
-</tr>
-
-<tr>
-<td>Unique Customers</td>
-<td>{unique_customers}</td>
-</tr>
-
-<tr>
-<td>Total Revenue</td>
-<td>৳{total_revenue:,.0f}</td>
-</tr>
-
-<tr>
-<td>Delivery Cost</td>
-<td>৳{total_delivery:,.0f}</td>
-</tr>
-
-<tr>
-<td>Net Profit</td>
-<td><b style="color:green;">৳{total_profit:,.0f}</b></td>
-</tr>
-
-<tr>
-<td>Average Order Value</td>
-<td>৳{aov:,.2f}</td>
-</tr>
-
-</table>
-
-<br>
-
-<p>{ai_insights}</p>
-
-<p>
-Regards,<br>
-<b>{business_name} Automation</b>
-</p>
-
-</div>"""
+            <!-- Footer -->
+            <div style="background-color: #f1f5f9; padding: 20px; text-align: center; color: #64748b; font-size: 12px;">
+                <p style="margin: 0;">Automated by <b>myShop AI</b></p>
+                <p style="margin: 5px 0 0 0;">Powered by Google Gemma 4</p>
+            </div>
+        </div>
+    </div>
+    """
 
 
 # ─── Scheduled job ────────────────────────────────────────────────────────────

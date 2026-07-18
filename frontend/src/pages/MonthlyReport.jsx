@@ -18,6 +18,7 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 import Sidebar from '../components/Sidebar';
+import FormattedText from '../components/FormattedText';
 import api from '../services/api';
 import { exportToPDF } from '../utils/pdfExport';
 
