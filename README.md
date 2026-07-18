@@ -181,5 +181,6 @@ npm run dev
 5. **Optimize with Dynamic Pricing**: On the **Products** page, hit the **"Pricing AI"** button. Gemma 4 will analyze your sales velocity and stock buffers to suggest markup opportunities or clearance discounts.
 6. **Plan AI Restocks**: Also on the **Products** page, click **"Restock AI"**. Gemma 4 cross-references your 30-day sales velocity and current inventory to generate a precise 14-day purchase plan (what to buy, what to skip).
 7. **Automate Daily Reports**: Finally, go to **Settings** and schedule an automated daily AI email so you wake up to fresh insights every morning!
-"# myShop-AI-Gemma-4-Powered-Sales-Management" 
-"# myShop-AI-Gemma-4-Powered-Sales-Management" 
+
+### 5. Troubleshooting
+If you encounter any errors while setting up the project locally (such as `uvicorn` not recognized, `vite` not recognized, or npm missing native bindings), please check out our comprehensive **[Troubleshooting Guide (Google Docs)](https://docs.google.com/document/d/1bhvD6wSLvgTUWDY0tF1paNiXw-c0ipBpfczD2uuQVSM/edit?usp=sharing)**.
