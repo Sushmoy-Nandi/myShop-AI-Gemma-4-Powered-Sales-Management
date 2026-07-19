@@ -83,6 +83,7 @@ myShop-AI/
 - **Database**: Uses `SQLite` by default (easy to run locally) through `SQLAlchemy` ORM. 
 - **Authentication**: Uses secure JWT (JSON Web Tokens) to manage user logins and roles.
 - **Background Tasks**: Uses `APScheduler` to run a background job every hour for generating and sending AI reports via SMTP.
+- **AI-Assisted Development**: See [How Codex & GPT-5.6 were used](How_Codex_&_GPT-5.6_were_used.md) for details on the implementation process.
 
 ## 7. Challenges Encountered
 - **Prompt Engineering for Bengali**: Ensuring Gemma 4 generated high-quality, professional business advice in Bengali required careful prompt tuning, as direct translations often sounded unnatural.
